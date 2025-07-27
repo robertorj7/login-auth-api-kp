@@ -42,7 +42,6 @@ public class TokenService {
                     .build()
                     .verify(token)
                     .getSubject();
-
         } catch (JWTVerificationException exception) {
             throw new RuntimeException(exception);
         }
